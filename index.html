@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate">
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate">
+    <button id="filterBtn">Filter</button>
+    <button id="clearFilterBtn">clear sFilter</button>
+
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>10-11-2023 11:12</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>11-11-2024 11:12 am</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>30-11-2023 11:12 am</td>
+
+            </tr>
+            <!-- Add more rows with dates -->
+        </tbody>
+    </table>
+    <div id="example2">Found items: </div>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
